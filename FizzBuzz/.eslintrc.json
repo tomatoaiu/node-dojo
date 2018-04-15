@@ -1,0 +1,10 @@
+{
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "semi": ["off", "never"],
+    "eol-last": ["off", "never"]
+  }
+}
