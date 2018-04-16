@@ -11,13 +11,15 @@ describe('TEST : prime', () => {
       assert.equal(prime.answer(1), '1')
     })
 
-    it('input 6 is Prime', () => {
-      assert.equal(prime.answer(6), '6')
-    })
-
     it('input 9 is Prime', () => {
       assert.equal(prime.answer(9), '9')
     })
+
+    for(let i = 4; i <= 100; i += 2){
+      it(`input ${i} is Prime`, () => {
+        assert.equal(prime.answer(i), i)
+      })
+    }
 
     const primes = [
       2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,

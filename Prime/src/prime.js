@@ -26,12 +26,12 @@ const prime = {
         return 'Prime'
       }
     }
-    return x
+    return String(x)
   },
   run(start, end) {
     const answers = []
     for (let i = start; i <= end; i++) {
-      const primeNumber = String(this.answer(i))
+      const primeNumber = this.answer(i)
       answers.push(primeNumber)
       console.log(`${i} : ${primeNumber}`)
     }
